@@ -10,7 +10,7 @@ const myFileWriter = async (fileName, fileContent) => {
 const myFileReader = async (fileName) => {
 	// write code here
 	// dont chnage function name
-	fsPromises.readFile(fileName)
+	fs.readFile(fileName)
 }
 
 
