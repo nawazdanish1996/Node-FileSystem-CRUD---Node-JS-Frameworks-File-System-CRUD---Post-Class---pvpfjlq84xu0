@@ -10,8 +10,7 @@ const myFileWriter = async (fileName, fileContent) => {
 const myFileReader = async (fileName) => {
 	// write code here
 	// dont chnage function name
-	fileName = "File.txt"
-	fs.readFile(fileName, "World")
+	fs.readFile(fileName)
 }
 
 
