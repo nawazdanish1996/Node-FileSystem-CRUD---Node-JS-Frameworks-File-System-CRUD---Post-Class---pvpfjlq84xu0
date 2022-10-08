@@ -1,7 +1,6 @@
 {
   "name": "crud",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --silent"
@@ -28,5 +27,14 @@
   },
   "devDependencies": {
     "xml-js": "^1.6.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawazdanish1996/Node-FileSystem-CRUD---Node-JS-Frameworks-File-System-CRUD---Post-Class---pvpfjlq84xu0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nawazdanish1996/Node-FileSystem-CRUD---Node-JS-Frameworks-File-System-CRUD---Post-Class---pvpfjlq84xu0/issues"
+  },
+  "homepage": "https://github.com/nawazdanish1996/Node-FileSystem-CRUD---Node-JS-Frameworks-File-System-CRUD---Post-Class---pvpfjlq84xu0#readme",
+  "description": ""
 }
