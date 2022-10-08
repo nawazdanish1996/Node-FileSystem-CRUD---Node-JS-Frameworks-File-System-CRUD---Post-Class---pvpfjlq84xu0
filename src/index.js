@@ -25,7 +25,7 @@ const myFileUpdater = async (fileName, fileContent) => {
 const myFileDeleter = async (fileName) => {
 	// write code here
 	// dont chnage function name
-	fs.unlinkSync(fileName)
+	fs.unlink(fileName)
 }
 
 
