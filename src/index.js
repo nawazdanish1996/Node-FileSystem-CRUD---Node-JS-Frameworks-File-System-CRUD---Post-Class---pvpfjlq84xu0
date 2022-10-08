@@ -1,33 +1,39 @@
-const fs = require('fs/promises');
+const fs = require("fs/promises");
 
 const myFileWriter = async (fileName, fileContent) => {
-	// write code here
-	// fileName = "File.txt";
-	// fileContent = "Hello ";
-	// dont chnage function name
-	fs.writeFile(fileName, fileContent);
-}
+  // write code here
+  // dont chnage function name
+  const content = await fs.writeFile(fileName, fileContent, function (err) {
+    if (err) throw err;
+  });
+  return content;
+};
 
 const myFileReader = async (fileName) => {
-	// write code here
-	// dont chnage function name
-	fs.readFile(fileName);
-}
-
+  // write code here
+  // dont chnage function name
+  const content = await fs.readFile(fileName, "utf8", function (err) {
+    if (err) throw err;
+  });
+  return content;
+};
 
 const myFileUpdater = async (fileName, fileContent) => {
-	// write code here
-	// fileContent = "World";
-	// dont chnage function name
-	fs.appendFile(fileName, fileContent)
-}
+  // write code here
+  // dont chnage function name
+  const content = await fs.appendFile(fileName, fileContent, function (err) {
+    if (err) throw err;
+  });
+  return content;
+};
 
 const myFileDeleter = async (fileName) => {
-	// write code here
-	// dont chnage function name
-	fs.unlink(fileName)
-}
+  // write code here
+  // dont chnage function name
+  const content = fs.unlink(fileName, function (err) {
+    if (err) throw err;
+  });
+  return content;
+};
 
-
-
-module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter }
+module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter };
